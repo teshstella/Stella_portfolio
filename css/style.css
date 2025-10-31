@@ -1,0 +1,59 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f6f5f2;
+  color: #222;
+}
+
+.hero {
+  min-height: 90vh;
+  background-color: #eae7dc;
+  padding: 60px 0;
+}
+
+.hero h1 span {
+  color: #555;
+}
+
+.hero-img {
+  max-width: 80%;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.about p {
+  font-size: 1.1rem;
+}
+
+.skills-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.skills-list li {
+  background: #ddd;
+  margin: 5px 0;
+  padding: 8px 12px;
+  border-radius: 5px;
+}
+
+.project-card {
+  border: none;
+  transition: 0.3s ease;
+}
+.project-card img {
+  width: 100%;
+  height: 250px;  
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+footer {
+  font-size: 0.9rem;
+}

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stella Murei Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">Stella Murei</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero d-flex align-items-center">
+    <div class="container text-center text-md-start">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <h1 class="display-4 fw-bold">Stella Murei<br><span>Portfolio</span></h1>
+          <p class="lead mt-3">A creative and passionate developer dedicated to designing responsive, user-friendly and impactful web solutions.</p>
+          <a href="#projects" class="btn btn-dark mt-3">View My Work</a>
+        </div>
+        <div class="col-md-6 text-center">
+          <img src="assets/Profile.jpg" alt="Stella Murei" class="img-fluid hero-img rounded">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">About Me</h2>
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <img src="assets/me.jpg" class="img-fluid rounded" alt="About Image">
+        </div>
+        <div class="col-md-6">
+          <p>Hello! I’m <strong>Stella Murei</strong>, a Computer Science student at the University of Kabianga, passionate 
+            about web and mobile app development. I enjoy bringing creative ideas to life using HTML, CSS, JavaScript, Kotlin and AI tools.</p>
+          <h5 class="mt-4">Skills</h5>
+          <ul class="skills-list">
+            <li>HTML, CSS and JavaScript</li>
+            <li>Bootstrap and Responsive Design</li>
+            <li>Android Development (Kotlin)</li>
+            <li>AI & Chatbot Integration</li>
+            <li>Version Control (Git/GitHub)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">My Latest Projects</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card project-card h-100">
+            <img src="assets/SmartHome.jpg" class="card-img-top" alt="Smart Home">
+            <div class="card-body">
+              <h5 class="card-title">Smart Home Automation</h5>
+              <p class="card-text">A system to control smart bulbs and TVs over Bluetooth and Wi-Fi, enhancing convenience and efficiency.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card project-card h-100">
+            <img src="assets/perfume.jpg" class="card-img-top" alt="Perfume Shop">
+            <div class="card-body">
+              <h5 class="card-title">Comrades Perfume Shop</h5>
+              <p class="card-text">An e-commerce website for purchasing perfumes, built with HTML, CSS, and JavaScript.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card project-card h-100">
+            <img src="assets/voice.jpg" class="card-img-top" alt="Voice App">
+            <div class="card-body">
+              <h5 class="card-title">Voice to Text App</h5>
+              <p class="card-text">An Android application that converts speech into text using AI-based voice recognition.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Contact Me</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <form id="contactForm" class="p-4 rounded shadow-sm bg-white">
+            <div class="mb-3">
+              <label for="name" class="form-label">Name</label>
+              <input type="text" class="form-control" id="name" placeholder="Enter your name">
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="Enter your email">
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea id="message" class="form-control" rows="4" placeholder="Your message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-dark w-100">Send Message</button>
+          </form>
+          <p id="formMsg" class="text-center mt-3 text-success"></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center py-3 bg-dark text-white">
+    <p>&copy; <span id="year"></span> Stella Murei | All Rights Reserved</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="/js/script.js"></script>
+</body>
+</html>
